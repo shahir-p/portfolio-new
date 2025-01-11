@@ -84,9 +84,11 @@ nav ul li a:hover {
 h1 {
     margin-bottom: 20px;
 }
-#checkbox{
+
+#checkbox {
     display: none;
 }
+
 nav .menu-icon {
     display: block;
     font-size: 2rem;
@@ -99,17 +101,18 @@ nav .close-icon {
     font-size: 2rem;
     color: white;
 }
-.icons{
-    display:none;
+
+.icons {
+    display: none;
 }
 
 /* Responsive Styling */
 @media screen and (max-width: 920px) {
-    .icons{
+    .icons {
         display: flex;
     }
 
-    #close-icon{
+    #close-icon {
         display: none;
     }
 
@@ -117,14 +120,17 @@ nav .close-icon {
     #checkbox:checked~.icons #menu-icon {
         display: none;
     }
+
     /* show close icon */
     #checkbox:checked~.icons #close-icon {
         display: block;
     }
-    #checkbox:checked~.menu{
+
+    #checkbox:checked~.menu {
         display: flex;
     }
-    .menu{
+
+    .menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -137,7 +143,7 @@ nav .close-icon {
         text-align: center;
     }
 
-   
+
     /* Sections with background color */
     #home {
         background-color: lightcoral;
@@ -161,13 +167,17 @@ nav .close-icon {
 }
 
 @media screen and (min-width:375px) and (max-width:450px) {
-    nav{
+    nav {
         padding: 10px 20px;
     }
-
-.section {
-    height: 100vh;
-    padding: 10px 20px;
-    margin-top: 64px;
-}
+    nav .logo h3 {
+        
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .section {
+        height: 100vh;
+        padding: 10px 20px;
+        margin-top: 64px;
+    }
 }
