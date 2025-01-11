@@ -159,3 +159,15 @@ nav .close-icon {
         background-color: lightyellow;
     }
 }
+
+@media screen and (min-width:375px) and (max-width:450px) {
+    nav{
+        padding: 10px 20px;
+    }
+
+.section {
+    height: 100vh;
+    padding: 10px 20px;
+    margin-top: 64px;
+}
+}
