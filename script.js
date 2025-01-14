@@ -36,3 +36,56 @@ navLinks.forEach(link => {
         checkbox.checked = false;
     });
 });
+
+
+//auto type
+
+// HTML structure for the effect
+// <div id="auto-typing"></div>
+
+const element = document.getElementById("auto-typing");
+
+const roles = ["Full Stack Developers", "Flutter Developers", "UI/UX Designers"];
+let currentRoleIndex = 0;
+let isDeleting = false;
+let currentText = "";
+let charIndex = 0;
+const typingSpeed = 100; // Speed for typing each letter
+const deletingSpeed = 80; // Speed for deleting each letter
+const pauseDelay = 3500; // Delay before switching roles
+
+function typeEffect() {
+    if (!isDeleting) {
+        // Typing effect
+        currentText = roles[currentRoleIndex].slice(0, charIndex + 1);
+        charIndex++;
+
+        if (currentText === roles[currentRoleIndex]) {
+            // Once all characters are typed, pause before starting deletion
+            setTimeout(() => {
+                isDeleting = true;
+                typeEffect();
+            }, pauseDelay);
+            return;
+        }
+    } else {
+        // Deleting effect
+        currentText = roles[currentRoleIndex].slice(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            // After deletion, move to the next role
+            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+            isDeleting = false;
+        }
+    }
+
+    element.textContent = currentText;
+    // Continue typing or deleting with appropriate speed
+    setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+}
+
+// Start the typing effect
+typeEffect();
+
+
