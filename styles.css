@@ -111,9 +111,9 @@ nav .close-icon {
 
 
 #home {
-  height: 1000px;
+  
   display: flex;
-  gap: 100px;
+  gap: 200px;
   border: 2px solid white;
   align-items: center;
   justify-content: space-between;
@@ -125,6 +125,7 @@ nav .close-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 70vw;
 }
 
 .text {
@@ -138,9 +139,10 @@ nav .close-icon {
 
 .developerName {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 20px;
+  width: 500px;
 }
 
 #name {
@@ -148,14 +150,14 @@ nav .close-icon {
 }
 
 .textAuto {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   gap: 10px;
 }
 
 #auto-typing {
   /* background-color: red; */
-  width: 500px;
+  
   font-size: 35px;
   font-weight: bold;
   font-family: Arial, sans-serif;
@@ -164,7 +166,7 @@ nav .close-icon {
   overflow: hidden;
 }
 
-#about {
+#homeAbout {
   font-size: 18px;
   line-height: 2;
 }
@@ -252,16 +254,16 @@ button {
 .imageDiv {
   display: flex;
   justify-content: center;
-  margin-right: 200px;
-  width: 400px;
-  height: 450px;
+  margin-right: 100px;
+  width: 30vw;
+  height: 50vh;
 }
 
 .home-img {
 
   background-color: red;
-  width: 400px;
-  height: 450px;
+  width: 30vw;
+  height: 50vh;
   text-align: center;
   align-items: center;
   /* margin-left: 30px; */
