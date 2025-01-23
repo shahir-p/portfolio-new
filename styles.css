@@ -421,26 +421,7 @@ button {
 
 
   /* Sections with background color */
-  #home {
-    background-color: lightcoral;
-    flex-direction: column-reverse;
-  }
-
-  #about {
-    background-color: lightblue;
-  }
-
-  #services {
-    background-color: lightgreen;
-  }
-
-  #portfolio {
-    background-color: lightgrey;
-  }
-
-  #contact {
-    background-color: lightyellow;
-  }
+  
 }
 
 @media screen and (min-width:375px) and (max-width:450px) {
