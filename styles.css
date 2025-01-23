@@ -172,6 +172,7 @@ nav .close-icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   /* width: 50vw; */
 }
 
@@ -196,7 +197,7 @@ nav .close-icon {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 500px;
+  /* width: 500px; */
 }
 
 
@@ -320,67 +321,7 @@ button {
 
 @media(max-width: 975px){
 
-#home {
-  padding: 50px 200px 0px 200px;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  gap: 20px;
-  /* border: 2px solid white; */
-  align-items: center;
-  justify-content: center;
-  /* background-color: lightcoral; */
-}
-.imageDiv {
-  display: flex;
-  justify-content: center;
-  margin-right: 0px;
-  /* width: 50vw; */
-  /* height: 50vh; */
-  /* background-color: green; */
-}
-.home-img {
-  width: 300px;
-  height: 300px;
-}
-.text {
-  font-size: 16px;
-  font-weight: 500;
-}
-#name {
-  font-size: 30px;
-  font-weight: 600;
-}
 
-.text span {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--text-color);
-}
-.button {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 12px;
-}
-.social-media {
-  margin-top: 20px;
-  /* background-color: green; */
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  gap: 15px;
-}
-.icon {
-  width: 35px;
-  height: 35px;
-  background-color: transparent;
-  color: var(--text-color);
-  cursor: pointer;
-  box-shadow: 0 0 5px var(--text-color);
-
-}
-#i {
-  font-size: 20px;
-}
 }
 @media(max-width: 920px) {
  
@@ -421,6 +362,67 @@ button {
 
 
   /* Sections with background color */
+  #home {
+    padding: 50px 200px 0px 200px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .imageDiv {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    /* width: 50vw; */
+    /* height: 50vh; */
+    /* background-color: green; */
+  }
+  .home-img {
+    width: 300px;
+    height: 300px;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #name {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .text span {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  .button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .social-media {
+    margin-top: 20px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--text-color);
+  
+  }
+  #i {
+    font-size: 20px;
+  }
   
 }
 
