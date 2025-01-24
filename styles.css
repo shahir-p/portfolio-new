@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(5px);
 }
 
 /* Logo */
@@ -76,12 +77,7 @@ nav ul li a:hover {
 
 
 /* Section styling */
-.section {
-  width: 100%;
-  height: 95vh;
-  padding: 10px 80px;
-  margin-top: 64px;
-}
+
 
 h1 {
   margin-bottom: 20px;
@@ -108,7 +104,14 @@ nav .close-icon {
   display: none;
 }
 
-
+.section {
+  width: 100%;
+  height: 100vh;
+  /* padding: 10px 80px; */
+  /* margin-top: 64px; */
+  /* border: 2px solid white; */
+  padding-top: 64px;
+}
 
 
 #home {
@@ -116,7 +119,7 @@ nav .close-icon {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
-  /* border: 2px solid white; */
+
   align-items: center;
   justify-content: center;
   
@@ -178,16 +181,16 @@ nav .close-icon {
 
 
 .text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 #name {
-  font-size: 35px;
+  font-size: 48px;
   font-weight: 600;
 }
 
 .text span {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -248,7 +251,7 @@ nav .close-icon {
   margin-top: 30px;
   background-color: var(--text-color);
   padding: 10px;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 50px;
   text-decoration: none;
   display: flex;
@@ -311,24 +314,146 @@ button {
     0px -2px 5px var(--text-color);
   /* Top shadow */
 }
+#about{
+  padding-top: 64px;
+  /* background-color: darkgreen; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.subHead{
+  font-size: 16px;
+  color: rgb(255, 255, 255,0.7);
+}
+.mainHead{
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.aboutGrid{
+  /* background-color: red; */
+ flex-grow: 1;
+ display: grid;
+ grid-template-columns:60% 40% ;
+/* gap: 20px; */
+padding: 0px 100px;
 
+}
+.aboutGridBox{
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutImg{
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 20px;
+  background-position: center;
+  background-image: url('./images/homebg.png');
+  background-size: cover;
+}
+.aboutContent{
+  /* flex-grow: 1; */
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  display: grid;
+  grid-template-rows: 40% 60%;
+  padding: 50px 30px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.content1{
+  /* width: 100%; */
+  margin-top: 70px;
+  height: 200px;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+}
+.aboutBox{
+  border-radius: 20px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
+.aboutIcon{
+  width: 40px;
+  height: 40px;
+}
+.aboutIcon img{
+  height: 100%;
+  width: 100%;
+}
+.boxHead{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.content2{
+  margin-top: 20px;
+  /* border: 2px solid ; */
+  text-align: justify;
+}
 
 
 
 
 /* Responsive Styling */
 
-@media(max-width: 975px){
-
+@media(max-width: 978px){
+  #about{
+    padding-top: 64px;
+    /* background-color: darkgreen; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    
+  }
+  .aboutGrid{
+    /* background-color: red; */
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column-reverse;
+   grid-template-rows:60% 40% ;
+  /* gap: 20px; */
+  padding: 0px 100px;
+  
+  }
+  .aboutGridBox{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutContent{
+    display: grid;
+    padding: 0px 30px;
+    
+  }
 
 }
 @media(max-width: 920px) {
   nav {
     width: 100%;
     height: 64px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     padding: 10px 50px;
+    backdrop-filter: blur(5px) brightness(50%);
   }
  
   .icons {
@@ -369,7 +494,7 @@ button {
 
   /* Sections with background color */
   #home {
-    padding: 50px 200px 0px 200px;
+    padding: 100px 200px 0px 200px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 20px;
@@ -447,5 +572,15 @@ button {
     height: 100vh;
     padding: 10px 20px;
     margin-top: 64px;
+  }
+  #home {
+    padding: 50px 200px 0px 200px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: center;
+    
   }
 }
